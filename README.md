@@ -6,7 +6,7 @@ I developed an automated water filtration system designed to purify polluted wat
 ## System Workflow
 The logic of the automation is driven by continuous parameter assessment. The system checks the water level to ensure safe pump operation, runs the filtration cycle, and utilizes servo motors to evaluate and redirect the clean water into a separate container once the process is complete.
 
-![System Workflow](Images/workflow.png)
+![System Workflow](Images/Workflow.png)
 
 ## Core Features
 * **Autonomous Operation:** I integrated an analog water level sensor to automatically trigger the filtration process when needed and stop the pump safely when the water level is too low.
@@ -17,7 +17,7 @@ The logic of the automation is driven by continuous parameter assessment. The sy
 ## Graphical User Interface
 I developed the `.mlapp` to act as the master control hub. I implemented a fixed-rate timer to parse incoming serial data every 0.1 seconds, which dynamically updates the linear and circular gauges, as well as color-coded status lamps based on the hardware's real-time state.
 
-![MATLAB GUI](Images/gui.png)
+![MATLAB GUI](Images/Matlab_GUI.png)
 
 ## Hardware Components
 * **Microcontroller:** Arduino Mega 2560
