@@ -3,6 +3,11 @@
 ## Project Overview
 I developed an automated water filtration system designed to purify polluted water efficiently without manual supervision. I programmed the system to continuously monitor the water level and control a peristaltic pump alongside servo motors to manage the entire filtration cycle. To provide real-time monitoring and remote control capabilities, I built a custom MATLAB Graphical User Interface (GUI) that communicates directly with the hardware via serial communication.
 
+## System Design
+The physical architecture of the system consists of a main filtration container, a clean water reservoir, a peristaltic pump, and multiple servo motors. I used an Arduino Mega as the central processing unit to interface with the water level sensor and manage the actuators via a relay module.
+
+![System Design](Images/system_design.png)
+
 ## System Workflow
 The logic of the automation is driven by continuous parameter assessment. The system checks the water level to ensure safe pump operation, runs the filtration cycle, and utilizes servo motors to evaluate and redirect the clean water into a separate container once the process is complete.
 
