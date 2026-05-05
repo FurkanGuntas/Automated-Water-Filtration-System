@@ -32,5 +32,5 @@ I developed the `.mlapp` to act as the master control hub. I implemented a fixed
 * **Display:** 16x2 LCD Screen with potentiometer for local status monitoring
 
 ## Software Architecture
-* **Arduino (C++):** I wrote the firmware to handle sensor data acquisition, servo positioning, relay control, and local LCD updates. The logic continuously listens for incoming serial commands (`START`, `STOP`, `CHANGE`) and broadcasts the system status (`Water Level: X`, `PUMP:ON`, `ERROR:Low Water`).
+* **Arduino (C++):** I wrote the Arduino code to handle sensor data acquisition, servo positioning, relay control, and local LCD updates. The logic continuously listens for incoming serial commands (`START`, `STOP`, `CHANGE`) and broadcasts the system status (`Water Level: X`, `PUMP:ON`, `ERROR:Low Water`).
 * **MATLAB:** Handles the visual feedback and sends user-initiated override commands to the microcontroller reliably.
